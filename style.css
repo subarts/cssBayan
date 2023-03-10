@@ -1,0 +1,39 @@
+
+body{   
+}
+h1 {
+    font-size: 3rem;
+    
+}
+label {
+    display: block;
+    border-top: 0.1rem solid #5e5959;
+    width: 27rem;
+    cursor:pointer;
+}
+input+.one{
+    display: block;
+    background: url(image/4663625.jpg)no-repeat;
+    height: 21rem;
+  
+    
+}
+input:checked +span{
+    display: none;
+    
+}
+input{
+    display: none;
+}
+
+.two{
+    display: block;
+    height: 21rem;
+    background: url(image/E2_T5aTXtOs.jpg) no-repeat;
+    
+
+}
+
+
+
+
