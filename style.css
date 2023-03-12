@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
 }
 
 h1 {
@@ -21,7 +21,8 @@ label {
     max-height: 0;
    background: url(image/4663625.jpg)no-repeat;
     height: 21rem;
-    transition: 0.5s;
+    transition:1s;
+    background-size: contain;
 }
 div{
     display: flex;
@@ -29,35 +30,43 @@ div{
     justify-content: space-between;
     align-items: center;
 }
+body:hover{
+    cursor: none;
+}
+
 img{
     transform: rotate(45deg);
+    transition:1s;
+    height: 0.7rem;
+    width: 0.7rem;
 }
 label:hover img{
     transform: rotate(90deg);
-    transition: 0.5s;
+    transition: 1s;
 }
  label input:checked #image {
-    
+    max-height: 30vh;
     transform: rotate(90deg);
-    transition: 0.5s;
+    transition: 1s;
+    
 }
 
-label:hover >.one,label:hover >.two,label:hover >.three{
+label:hover .one,label:hover .two,label:hover .three{
     max-height:21rem ;
-   transition: 0.5s;
+   transition: 1s;
   
 }
 input:checked +.one,input:checked +.two,input:checked +.three{
     max-height:21rem ;
-    transition: 0.5s;
+    transition: 1s;
 }
 label:hover >.four{
     max-height:28rem ;
-    transition: 0.5s;
+    transition: 1s;
 }
 input:checked +.four{
     max-height:28rem ;
-    transition: 0.5s;
+    transition: 1s;
 }
 .two {
    display: block;
@@ -65,7 +74,7 @@ input:checked +.four{
     height: 21rem;
     background: url(image/jsmeme1.jpg) no-repeat;
     background-size: contain;
-    transition: 0.5s;
+    transition: 1s;
 }
 input {
     display: none;
@@ -76,7 +85,7 @@ input {
     height: 21rem;
     background-size: contain;
     background: url(image/269f3708b5e22a1481c78707bfa14a36-2.gif) no-repeat;
-    transition: 0.5s;
+    transition: 1s;
 }
 .four{
     display: block;
@@ -84,9 +93,42 @@ input {
     height: 28rem;
     background: url(image/E2_T5aTXtOs.jpg) no-repeat;
     background-size: contain;
-    transition: 0.5s;
+    transition: 1s;
 }
-
+@media screen and (width:1180px) and (height: 820px){
+    h1 {
+        font-size: 2rem; 
+    }
+}
+@media screen and (width:320px) and (height: 568px){
+    h1 {
+        font-size: 1rem;
+        
+    }
+    label {
+        width: 17rem;
+    }
+    .one{
+        height: 15rem;
+        transition: 1s;
+    }
+    .two{
+        height: 17rem;
+        transition: 1s;
+    }
+    .three{
+        height: 11rem;
+        background-size: 100%;
+        transition: 1s;
+    }
+    .four{
+        transition: 1s;
+    }
+    input:checked +.one,input:checked +.two,input:checked +.three{
+        max-height: 18rem;
+        transition: 1s;
+    }
+}
 
 
 
